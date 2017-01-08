@@ -2,8 +2,6 @@ import express from 'express';
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.sendfile('index.html', {root: __dirname })
-});
+app.get('/', (req, res) => res.send('test'));
 
 export default app;
